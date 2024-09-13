@@ -1,0 +1,309 @@
+/* styles.css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.6;
+  background: lightslategrey;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  color: lightslategray;
+  font-weight: 300;
+  font-family: sofia;
+}
+
+.picha {
+  object-fit: cover;
+  object-position: center 10%;
+}
+
+.whoami {
+  padding: 10px 20px;
+  font-family: sofia;
+  font-weight: 275;
+}
+
+/* image styles */
+.proj {
+  height: 200px;
+  width: auto;
+  padding: 30px 40px;
+  margin: 30px 40px;
+  border-radius: 40px;
+}
+
+.description {
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+
+#contact,
+#education {
+  background: rgb(236, 236, 236);
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+#contact,
+#education,
+#employment,
+#projects {
+  background: rgb(236, 236, 236);
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+#contact h4 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+#contact p {
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+#contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+.intro img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro h1 {
+  margin-top: 10px;
+  font-size: 2.5em;
+}
+
+/* Main content styles */
+main {
+  padding: 20px 0;
+}
+
+section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.education-item,
+.work-item {
+  margin-bottom: 20px;
+}
+
+.education-item h3,
+.work-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: 100%;
+  animation: slide 15s infinite;
+}
+
+.carousel-slide {
+  flex: 1;
+  min-width: 100%;
+  border-radius: 40px;
+}
+
+.carousel-slide img {
+  width: auto;
+  height: auto;
+  border-radius: 40px;
+}
+#leave-message {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+#leave-message h2 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#leave-message form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#leave-message label {
+  font-size: 1.2em;
+  color: #555;
+}
+
+#leave-message input,
+#leave-message textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+#leave-message input:focus,
+#leave-message textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+#leave-message textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+#leave-message input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#leave-message input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive design ya from tablets downwards */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #leave-message {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  #leave-message h2 {
+    font-size: 1.8em;
+  }
+}
+
+/* Keyframes for animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  }
+  66.66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
